@@ -2,15 +2,16 @@ package sorting;
 
 import java.util.Scanner;
 
-public class Bubblesort {
+public class newsort {
+
 	public void sort(int a[])
 	{
 		int temp;
 		for(int i=0;i<a.length;i++)
 		{
-			for(int j=0;j<a.length;j++)
+			for(int j=i+1;j<a.length;j++)
 			{
-				if(a[i]<a[j])
+				if(a[i]>a[j])
 				{
 					temp=a[i];
 					a[i]=a[j];
@@ -37,11 +38,9 @@ public class Bubblesort {
 		{
 			a[i]=in.nextInt();
 		}
-		Bubblesort obj = new Bubblesort();
+	    newsort obj = new newsort();
 		obj.sort(a);
 		in.close();
-		
-
 	}
 
 }
